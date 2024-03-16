@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" strict="true">
+  <Properties>
+    <Property name="filename">target/logs/test.log</Property>
+  </Properties>
+   
+  <Appenders>
+    <Appender type="Console" name="STDOUT">
+      <Layout type="PatternLayout" pattern="[%-5level] [%d{YYYY-MM-dd HH:mm:ss.SSS}] [%logger{36}:Line %L] %m%n"/>
+    </Appender>
+    
+    <Appender type="File" name="file" fileName="${filename}">
+      <Layout type="PatternLayout"  pattern="[%-5level] [%d{YYYY-MM-dd HH:mm:ss.SSS}] [%logger{36}:Line %L] %m%n"/>
+    </Appender>
+  </Appenders>
+ 
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="file"/>
+      <AppenderRef ref="STDOUT"/>
+    </Root>
+  </Loggers>
+ 
+</Configuration>
