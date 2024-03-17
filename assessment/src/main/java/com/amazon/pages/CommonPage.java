@@ -28,6 +28,10 @@ public abstract class CommonPage extends Page{
 	private static Logger log = LogManager.getLogger(CommonPage.class);
 	
 	
-	
+	protected double parseToDouble(String text)
+	{
+		text = text.replaceAll(",","");
+		return Double.parseDouble(text);
+	}
 
 }

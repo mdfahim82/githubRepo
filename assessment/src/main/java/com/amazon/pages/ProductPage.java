@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,12 +26,11 @@ public class ProductPage extends CommonPage{
 	@FindBy(xpath="//span[@id='taxInclusiveMessage']/preceding-sibling::span[1]/span/span[2]")
 	private List<WebElement> wbDiscountedPriceLbls;
 	
-	@FindBy(id="add-to-cart-button")
+	@FindBy(name="submit.add-to-cart")
 	private WebElement wbAddToCartBtn;
 	
-
-	
-
+	@FindBy(id="attachSiNoCoverage-announce")
+	private WebElement wbSkipAddOnBtn;
 	
 	
 
@@ -44,14 +45,27 @@ public class ProductPage extends CommonPage{
 	
 	public double getDiscountedPrice()
 	{
+		switchWindow();
 		String discountedPrice = getText(wbDiscountedPriceLbls.get(0));
 		log.info("Discount Price: {}",discountedPrice);
-		return Double.parseDouble(discountedPrice);
+		return parseToDouble(discountedPrice);
 	}
 	
 	public void addToCart()
 	{
-		waitForElementClickable(wbAddToCartBtn).click();	
+		scrollIntoView(wbAddToCartBtn);
+//		wbAddToCartBtn.click();
+		jsClick(wbAddToCartBtn);
+		
+		try
+		{
+			jsClick(wbSkipAddOnBtn);
+		}
+		catch(NoSuchElementException e)
+		{
+			log.info("No Addon Displayed");
+		}
+		
 	}
 	
 	

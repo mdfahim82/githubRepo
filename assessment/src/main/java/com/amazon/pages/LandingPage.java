@@ -22,8 +22,8 @@ public class LandingPage extends CommonPage{
 	@FindBy(id="nav-search-submit-button")
 	private WebElement wbSearchBtn;
 	
-	@FindBy(xpath="//a[contains(@href,'/sspa/click?ie=UTF8&spc=')]//img")
-	private WebElement wbSearchResultImg;
+	@FindBy(xpath="//a[contains(@href,'/sspa/click?')]//img")
+	private List<WebElement> wbSearchResultImg;
 	
 	
 	
@@ -35,18 +35,20 @@ public class LandingPage extends CommonPage{
 		
 	}
 	
-	private static Logger log = LogManager.getLogger(LandingPage.class);
+	private Logger log = LogManager.getLogger(LandingPage.class);
 	
 
 	public void NavigateToLandingPage()
 	{
-		browser.get(application_URL);
-		waitForAllEmentsVisible(wbSearchBtn);	
+//		browser.get(application_URL);
+		browser.navigate().to(application_URL);
+		waitForElementVisibility(wbSearchTxtBx);	
 	}
 	
 	public List<WebElement> searchProductGetResults(String productName)
 	{
-		enterText(wbSearchBtn, productName);
+		enterText(wbSearchTxtBx, productName);
+		click(wbSearchBtn);
 		
 		return waitForAllEmentsVisible(wbSearchResultImg);
 	}

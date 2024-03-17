@@ -2,9 +2,11 @@ package com.amazon.pages;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -29,36 +31,64 @@ public abstract class Page {
 	private static Logger log = LogManager.getLogger(Page.class);
 	
 	
-	public WebElement waitForElementClickable(WebElement element)
+	protected WebElement waitForElementClickable(WebElement element)
 	{
 		return wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
-	public WebElement waitForElementVisibility(WebElement element)
+	protected WebElement waitForElementVisibility(WebElement element)
 	{
 		return wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public List<WebElement> waitForAllEmentsVisible(WebElement element) {
+	protected List<WebElement> waitForAllEmentsVisible(List<WebElement> elements) {
 		
-		return wait.until(ExpectedConditions.visibilityOfAllElements(element));
+		return wait.until(ExpectedConditions.visibilityOfAllElements(elements));
 	}
 	
-	public void enterText(WebElement element, String text)
+	protected void enterText(WebElement element, String text)
 	{
-		waitForElementClickable(element).clear();
+		waitForElementClickable(element);//.clear();
 		element.click();
 		element.sendKeys(text);
 	}
 	
-	public void click(WebElement element)
+	protected void click(WebElement element)
 	{
 		waitForElementClickable(element).click();
 	}
 	
-	public String getText(WebElement element)
+	protected String getText(WebElement element)
 	{
-		return waitForElementVisibility(element).getText();
+		String text = waitForElementVisibility(element).getText();
+		if(text==null || text.isEmpty())
+			text = element.getAttribute("innerHTML");
+		return text;
+	}
+	
+	protected void switchWindow()
+	{
+		String currentWindowHandle = browser.getWindowHandle();
+		Set<String> allWindows = browser.getWindowHandles();
+		for (String window : allWindows)
+		{
+			if(!window.equals(currentWindowHandle))
+			{
+				browser.switchTo().window(window);
+			}
+		}
+	}
+	
+	
+	protected void scrollIntoView(WebElement element)
+	{
+		((JavascriptExecutor) browser).executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+	
+	
+	protected void jsClick(WebElement element)
+	{
+		((JavascriptExecutor) browser).executeScript("arguments[0].click();", element);
 	}
 	
 }
