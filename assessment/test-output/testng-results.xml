@@ -1,17 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-18T11:27:56 IST" name="Default suite" finished-at="2024-03-18T11:28:07 IST" duration-ms="10976">
+  <suite started-at="2024-03-18T12:40:25 IST" name="Default suite" finished-at="2024-03-18T12:41:30 IST" duration-ms="65069">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-03-18T11:27:56 IST" name="Default test" finished-at="2024-03-18T11:28:07 IST" duration-ms="10976">
-      <class name="com.sample.test.MyTest">
-        <test-method signature="justTest()[pri:0, instance:com.sample.test.MyTest@592238c5]" started-at="2024-03-18T11:27:56 IST" name="justTest" finished-at="2024-03-18T11:28:07 IST" duration-ms="10947" status="PASS">
+    <test started-at="2024-03-18T12:40:25 IST" name="Default test" finished-at="2024-03-18T12:41:30 IST" duration-ms="65069">
+      <class name="stepdefinations.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" started-at="2024-03-18T12:40:25 IST" name="setUpClass" finished-at="2024-03-18T12:40:26 IST" duration-ms="508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b544732]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- justTest -->
-      </class> <!-- com.sample.test.MyTest -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" started-at="2024-03-18T12:40:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-18T12:40:49 IST" duration-ms="23375" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding an item in cart and verifying subtotal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add to Cart feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img]] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64525/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 06daf8af9c5170058ce788f5eec2bb59]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (06daf8af9c5170058ce788f5eec2bb59)] -> xpath: //a[contains(@href,'/sspa/click?')]//img]] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64525/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 06daf8af9c5170058ce788f5eec2bb59
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.amazon.pages.Page.waitForAllEmentsVisible(Page.java:43)
+at com.amazon.pages.LandingPage.searchProductGetResults(LandingPage.java:67)
+at stepdefinations.AddToCartStepDefination.user_search_in_search_filed(AddToCartStepDefination.java:81)
+at ✽.user search "Keyboard" in search filed(file:///E:/Repo/git/repository/assessment/src/test/resources/features/adding_2_iem_in_Cart.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" started-at="2024-03-18T12:40:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-18T12:41:18 IST" duration-ms="29470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding an item in cart and verifying subtotal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add Laptop to Cart feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" started-at="2024-03-18T12:41:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-18T12:41:30 IST" duration-ms="11660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding an item in cart and verifying subtotal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add Monitor to Cart feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" started-at="2024-03-18T12:41:30 IST" name="tearDownClass" finished-at="2024-03-18T12:41:30 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- stepdefinations.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

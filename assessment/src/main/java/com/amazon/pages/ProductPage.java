@@ -22,7 +22,7 @@ public class ProductPage extends CommonPage{
 	private List<WebElement> wbDiscountedPriceLbls;
 	
 	@FindBy(name="submit.add-to-cart")
-	private WebElement wbAddToCartBtn;
+	private List<WebElement> wbAddToCartBtn;
 	
 	@FindBy(id="attachSiNoCoverage-announce")
 	private WebElement wbSkipAddOnBtn;
@@ -46,8 +46,8 @@ public class ProductPage extends CommonPage{
 	
 	public void addToCart()
 	{
-		scrollIntoView(wbAddToCartBtn);
-		jsClick(wbAddToCartBtn);
+		scrollIntoView(wbAddToCartBtn.get(wbAddToCartBtn.size()-1));
+		wbAddToCartBtn.get(wbAddToCartBtn.size()-1).click();;
 		
 		try
 		{

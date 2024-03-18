@@ -89,3 +89,303 @@
 [INFO ] [2024-03-18 11:31:21.307] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 2
 [INFO ] [2024-03-18 11:31:25.128] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
 [INFO ] [2024-03-18 11:31:30.559] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 11:53:54.440] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:53:54.559] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 11:53:55.966] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 11:53:55.966] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 11:53:58.295] [com.sample.test.MyTest:Line 59] Total results count: 11
+[INFO ] [2024-03-18 11:53:58.296] [com.sample.test.MyTest:Line 61] Result Index: 2
+[INFO ] [2024-03-18 11:54:01.619] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 11:54:06.775] [com.sample.test.MyTest:Line 76] Exception occured: Index 0 out of bounds for length 0
+[INFO ] [2024-03-18 11:54:06.964] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 11:54:57.474] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:54:57.601] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 11:54:59.029] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 11:54:59.029] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 11:55:01.321] [com.sample.test.MyTest:Line 59] Total results count: 11
+[INFO ] [2024-03-18 11:55:01.322] [com.sample.test.MyTest:Line 61] Result Index: 2
+[INFO ] [2024-03-18 11:55:05.168] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 11:55:54.804] [com.sample.test.MyTest:Line 76] Exception occured: Index 0 out of bounds for length 0
+[INFO ] [2024-03-18 11:55:55.045] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 11:56:04.007] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:56:04.134] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 11:56:05.475] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 11:56:05.476] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 11:56:07.809] [com.sample.test.MyTest:Line 59] Total results count: 11
+[INFO ] [2024-03-18 11:56:07.809] [com.sample.test.MyTest:Line 61] Result Index: 2
+[INFO ] [2024-03-18 11:56:11.457] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 11:59:46.914] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:59:47.044] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 11:59:48.483] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 11:59:48.483] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 11:59:50.631] [com.sample.test.MyTest:Line 59] Total results count: 11
+[INFO ] [2024-03-18 11:59:50.631] [com.sample.test.MyTest:Line 61] Result Index: 2
+[INFO ] [2024-03-18 11:59:54.377] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:04:23.836] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:04:23.967] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:04:25.660] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 12:04:25.660] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:04:28.014] [com.sample.test.MyTest:Line 59] Total results count: 11
+[INFO ] [2024-03-18 12:04:28.015] [com.sample.test.MyTest:Line 61] Result Index: 2
+[INFO ] [2024-03-18 12:04:31.444] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:05:21.871] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:05:21.999] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:05:28.481] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 12:05:28.481] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 12:05:28.481] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:05:33.663] [com.sample.test.MyTest:Line 76] Exception occured: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: twotabsearchtextbox' (tried for 5 second(s) with 500 milliseconds interval)
+[INFO ] [2024-03-18 12:05:33.863] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 12:05:51.345] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:05:51.469] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:05:52.810] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 12:05:52.811] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:05:55.069] [com.sample.test.MyTest:Line 59] Total results count: 11
+[INFO ] [2024-03-18 12:05:55.070] [com.sample.test.MyTest:Line 61] Result Index: 2
+[INFO ] [2024-03-18 12:05:58.289] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:15:24.180] [com.sample.test.MyTest:Line 76] Exception occured: element not interactable
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34244948690890928d6afb36589661db, clickElement {id=f.9DC499717F5AFC6B8C2ADCC561DF2C27.d.39F57F6CA423F6D423F4CB083A9B3BA7.e.274}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61415}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61415/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (34244948690890928d6afb36589661db)] -> name: submit.add-to-cart]
+Session ID: 34244948690890928d6afb36589661db
+[INFO ] [2024-03-18 12:19:13.289] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:19:13.410] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:19:34.673] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 12:19:34.673] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 12:19:34.674] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:19:54.755] [com.sample.test.MyTest:Line 76] Exception occured: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: twotabsearchtextbox' (tried for 5 second(s) with 500 milliseconds interval)
+[INFO ] [2024-03-18 12:19:54.965] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 12:20:05.500] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:20:05.632] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:20:11.940] [com.sample.test.MyTest:Line 76] Exception occured: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f2998c24f38f700968ba11cbc0cc2c0, findElement {value=//button[text()='Continue shopping'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62067}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62067/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f2998c24f38f700968ba11cbc0cc2c0
+[INFO ] [2024-03-18 12:20:12.054] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 12:20:17.522] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:20:17.651] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:20:19.229] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 12:20:19.229] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:20:21.474] [com.sample.test.MyTest:Line 59] Total results count: 11
+[INFO ] [2024-03-18 12:20:21.474] [com.sample.test.MyTest:Line 61] Result Index: 2
+[INFO ] [2024-03-18 12:20:24.875] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:20:53.548] [com.sample.test.MyTest:Line 76] Exception occured: element not interactable
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [635e9b8b865feca7c1bce94839d6bdde, clickElement {id=f.D02EE2E49DF322A04CECF98062FD08A6.d.4EF5EF0C520F0415F4460B8E9F41D7B1.e.278}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62093}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62093/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (635e9b8b865feca7c1bce94839d6bdde)] -> name: submit.add-to-cart]
+Session ID: 635e9b8b865feca7c1bce94839d6bdde
+[INFO ] [2024-03-18 12:23:45.021] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:23:45.151] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:23:51.541] [com.sample.test.MyTest:Line 76] Exception occured: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [89969439dafc1bd05c4a22b1ea55954a, findElement {value=//button[text()='Continue shopping'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63695/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 89969439dafc1bd05c4a22b1ea55954a
+[INFO ] [2024-03-18 12:23:51.638] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 12:23:56.444] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:23:56.571] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:23:59.193] [com.sample.test.MyTest:Line 76] Exception occured: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bcdb9ed6aeff38c243afc56b538eb456, findElement {using=xpath, value=//button[text()='Continue shopping']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63718}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63718/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bcdb9ed6aeff38c243afc56b538eb456
+[INFO ] [2024-03-18 12:23:59.335] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 12:24:22.213] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:24:22.344] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:24:23.778] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 12:24:23.779] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:24:26.094] [com.sample.test.MyTest:Line 59] Total results count: 11
+[INFO ] [2024-03-18 12:24:26.094] [com.sample.test.MyTest:Line 61] Result Index: 2
+[INFO ] [2024-03-18 12:24:29.850] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:27:42.449] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:27:42.582] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:27:52.968] [com.sample.test.MyTest:Line 76] Exception occured: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e72b2dbcbd20c2602a3bdd0a0bfd2a07, findElement {using=xpath, value=//button[text()='Continue shopping']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63918}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63918/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e72b2dbcbd20c2602a3bdd0a0bfd2a07
+[INFO ] [2024-03-18 12:27:53.098] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 12:28:00.275] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:28:00.400] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:28:07.027] [com.sample.test.MyTest:Line 76] Exception occured: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [353d18ae21508589053d64eef0b10652, findElement {using=xpath, value=//button[text()='Continue shopping']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63943/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 353d18ae21508589053d64eef0b10652
+[INFO ] [2024-03-18 12:28:07.144] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 12:28:09.100] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:28:09.221] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:28:10.591] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 12:28:10.592] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:28:12.910] [com.sample.test.MyTest:Line 59] Total results count: 11
+[INFO ] [2024-03-18 12:28:12.910] [com.sample.test.MyTest:Line 61] Result Index: 2
+[INFO ] [2024-03-18 12:28:16.687] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:28:55.586] [com.amazon.pages.CartPage:Line 50] Navigated to Cart Page
+[INFO ] [2024-03-18 12:28:55.607] [com.sample.test.MyTest:Line 76] Exception occured: Index 1 out of bounds for length 1
+[INFO ] [2024-03-18 12:28:55.798] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 12:30:15.286] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:30:15.406] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:30:16.714] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:30:16.716] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Laptop
+[INFO ] [2024-03-18 12:30:16.716] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:30:18.944] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 2
+[INFO ] [2024-03-18 12:30:22.391] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:30:43.404] [com.amazon.pages.CartPage:Line 50] Navigated to Cart Page
+[INFO ] [2024-03-18 12:30:43.636] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:32:40.313] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:32:40.448] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:32:41.803] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 12:32:41.803] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:32:44.041] [com.sample.test.MyTest:Line 59] Total results count: 11
+[INFO ] [2024-03-18 12:32:44.042] [com.sample.test.MyTest:Line 61] Result Index: 2
+[INFO ] [2024-03-18 12:32:47.691] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:33:08.862] [com.amazon.pages.CartPage:Line 50] Navigated to Cart Page
+[INFO ] [2024-03-18 12:34:30.885] [com.sample.test.MyTest:Line 76] Exception occured: Index 1 out of bounds for length 1
+[INFO ] [2024-03-18 12:34:31.086] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 12:35:59.129] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:35:59.255] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:36:00.601] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:36:00.603] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Laptop
+[INFO ] [2024-03-18 12:36:00.603] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:36:03.094] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 2
+[INFO ] [2024-03-18 12:36:06.407] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:36:27.552] [com.amazon.pages.CartPage:Line 50] Navigated to Cart Page
+[INFO ] [2024-03-18 12:36:27.553] [com.amazon.pages.CartPage:Line 55] Cart Page poductIndex: 2
+[INFO ] [2024-03-18 12:36:27.756] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:37:40.195] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:37:40.323] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:37:41.584] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:37:41.586] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Laptop
+[INFO ] [2024-03-18 12:37:41.586] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:37:45.228] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 2
+[INFO ] [2024-03-18 12:37:48.732] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:38:09.736] [com.amazon.pages.CartPage:Line 50] Navigated to Cart Page
+[INFO ] [2024-03-18 12:38:09.736] [com.amazon.pages.CartPage:Line 55] Cart Page poductIndex: 2
+[INFO ] [2024-03-18 12:38:09.775] [com.amazon.pages.CartPage:Line 57] Cart Page Price:   1,15,900.00
+[INFO ] [2024-03-18 12:38:09.814] [com.amazon.pages.CartPage:Line 79] Cart Page subTotalPrice:   1,15,900.00
+[INFO ] [2024-03-18 12:38:09.988] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:38:27.577] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:38:27.700] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:38:29.115] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:38:29.118] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Monitor
+[INFO ] [2024-03-18 12:38:29.118] [com.amazon.pages.LandingPage:Line 63] Search for Product: Monitor
+[INFO ] [2024-03-18 12:38:31.217] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 1
+[INFO ] [2024-03-18 12:38:35.537] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 10,999
+[INFO ] [2024-03-18 12:38:39.133] [com.amazon.pages.CartPage:Line 50] Navigated to Cart Page
+[INFO ] [2024-03-18 12:38:39.134] [com.amazon.pages.CartPage:Line 55] Cart Page poductIndex: 1
+[INFO ] [2024-03-18 12:38:39.185] [com.amazon.pages.CartPage:Line 57] Cart Page Price:   10,999.00
+[INFO ] [2024-03-18 12:38:39.221] [com.amazon.pages.CartPage:Line 79] Cart Page subTotalPrice:   10,999.00
+[INFO ] [2024-03-18 12:38:39.367] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:38:55.192] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:38:55.323] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:38:56.635] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:38:56.637] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Headphones
+[INFO ] [2024-03-18 12:38:56.637] [com.amazon.pages.LandingPage:Line 63] Search for Product: Headphones
+[INFO ] [2024-03-18 12:38:58.930] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 1
+[INFO ] [2024-03-18 12:39:03.421] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 26,990
+[INFO ] [2024-03-18 12:39:07.986] [com.amazon.pages.CartPage:Line 50] Navigated to Cart Page
+[INFO ] [2024-03-18 12:39:07.986] [com.amazon.pages.CartPage:Line 55] Cart Page poductIndex: 1
+[INFO ] [2024-03-18 12:39:08.099] [com.amazon.pages.CartPage:Line 57] Cart Page Price:   26,990.00
+[INFO ] [2024-03-18 12:39:08.130] [com.amazon.pages.CartPage:Line 79] Cart Page subTotalPrice:   26,990.00
+[INFO ] [2024-03-18 12:39:08.130] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Keyboard
+[INFO ] [2024-03-18 12:39:08.131] [com.amazon.pages.LandingPage:Line 63] Search for Product: Keyboard
+[INFO ] [2024-03-18 12:39:16.096] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:40:27.982] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:40:28.114] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:40:29.480] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:40:29.482] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Headphones
+[INFO ] [2024-03-18 12:40:29.483] [com.amazon.pages.LandingPage:Line 63] Search for Product: Headphones
+[INFO ] [2024-03-18 12:40:32.989] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 1
+[INFO ] [2024-03-18 12:40:37.659] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 26,990
+[INFO ] [2024-03-18 12:40:41.395] [com.amazon.pages.CartPage:Line 49] Navigated to Cart Page
+[INFO ] [2024-03-18 12:40:41.396] [com.amazon.pages.CartPage:Line 54] Cart Page poductIndex: 1
+[INFO ] [2024-03-18 12:40:41.441] [com.amazon.pages.CartPage:Line 56] Cart Page Price:   26,990.00
+[INFO ] [2024-03-18 12:40:41.473] [com.amazon.pages.CartPage:Line 78] Cart Page subTotalPrice:   26,990.00
+[INFO ] [2024-03-18 12:40:41.474] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Keyboard
+[INFO ] [2024-03-18 12:40:41.474] [com.amazon.pages.LandingPage:Line 63] Search for Product: Keyboard
+[INFO ] [2024-03-18 12:40:49.510] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:40:50.462] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:40:50.581] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:40:51.832] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:40:51.833] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Laptop
+[INFO ] [2024-03-18 12:40:51.833] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:40:54.110] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 2
+[INFO ] [2024-03-18 12:40:57.342] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:41:18.731] [com.amazon.pages.CartPage:Line 49] Navigated to Cart Page
+[INFO ] [2024-03-18 12:41:18.731] [com.amazon.pages.CartPage:Line 54] Cart Page poductIndex: 2
+[INFO ] [2024-03-18 12:41:18.769] [com.amazon.pages.CartPage:Line 56] Cart Page Price:   1,15,900.00
+[INFO ] [2024-03-18 12:41:18.800] [com.amazon.pages.CartPage:Line 78] Cart Page subTotalPrice:   1,15,900.00
+[INFO ] [2024-03-18 12:41:18.986] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:41:19.966] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:41:20.088] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:41:21.356] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:41:21.357] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Monitor
+[INFO ] [2024-03-18 12:41:21.357] [com.amazon.pages.LandingPage:Line 63] Search for Product: Monitor
+[INFO ] [2024-03-18 12:41:23.393] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 1
+[INFO ] [2024-03-18 12:41:27.225] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 10,999
+[INFO ] [2024-03-18 12:41:30.448] [com.amazon.pages.CartPage:Line 49] Navigated to Cart Page
+[INFO ] [2024-03-18 12:41:30.448] [com.amazon.pages.CartPage:Line 54] Cart Page poductIndex: 1
+[INFO ] [2024-03-18 12:41:30.493] [com.amazon.pages.CartPage:Line 56] Cart Page Price:   10,999.00
+[INFO ] [2024-03-18 12:41:30.523] [com.amazon.pages.CartPage:Line 78] Cart Page subTotalPrice:   10,999.00
+[INFO ] [2024-03-18 12:41:30.648] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:43:47.010] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:43:47.138] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:43:53.833] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:44:29.787] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:44:29.915] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:44:31.295] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:44:31.297] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Laptop
+[INFO ] [2024-03-18 12:44:31.298] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 12:44:33.630] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 2
+[INFO ] [2024-03-18 12:44:36.994] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 12:44:58.122] [com.amazon.pages.CartPage:Line 49] Navigated to Cart Page
+[INFO ] [2024-03-18 12:44:58.173] [com.amazon.pages.CartPage:Line 55] Cart Page Price:   1,15,900.00
+[INFO ] [2024-03-18 12:44:58.207] [com.amazon.pages.CartPage:Line 77] Cart Page subTotalPrice:   1,15,900.00
+[INFO ] [2024-03-18 12:44:58.384] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:45:08.550] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:45:08.677] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:45:11.513] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:45:11.514] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Monitor
+[INFO ] [2024-03-18 12:45:11.515] [com.amazon.pages.LandingPage:Line 63] Search for Product: Monitor
+[INFO ] [2024-03-18 12:45:18.897] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 1
+[INFO ] [2024-03-18 12:45:33.579] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 10,999
+[INFO ] [2024-03-18 12:45:49.486] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:47:30.935] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:47:31.060] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 12:47:32.377] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 12:47:32.378] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Monitor
+[INFO ] [2024-03-18 12:47:32.378] [com.amazon.pages.LandingPage:Line 63] Search for Product: Monitor
+[INFO ] [2024-03-18 12:47:35.053] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 1
+[INFO ] [2024-03-18 12:47:39.437] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 10,999
+[INFO ] [2024-03-18 12:47:43.303] [com.amazon.pages.CartPage:Line 49] Navigated to Cart Page
+[INFO ] [2024-03-18 12:47:43.349] [com.amazon.pages.CartPage:Line 55] Cart Page Price:   10,999.00
+[INFO ] [2024-03-18 12:47:43.380] [com.amazon.pages.CartPage:Line 77] Cart Page subTotalPrice:   10,999.00
+[INFO ] [2024-03-18 12:47:43.524] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed

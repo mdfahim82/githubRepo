@@ -1,5 +1,7 @@
 package com.amazon.utils;
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -33,6 +35,7 @@ public class WebDriverManager {
 
 		if (_baseDriver != null) {
 			_log.info("{} is initiated ", platform);
+			_baseDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			_baseDriver.manage().window().maximize();
 		}
 

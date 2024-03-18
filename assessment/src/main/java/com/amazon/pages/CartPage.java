@@ -37,7 +37,6 @@ public class CartPage extends CommonPage{
 	
 	public void navigateToCartPage()
 	{
-
 		try
 		{
 			waitForElementVisibility(wbCartBtn);
@@ -50,9 +49,9 @@ public class CartPage extends CommonPage{
 		_log.info("Navigated to Cart Page");
 	}
 	
-	public double getPriceFromCart(int poductIndex)
+	public double getPriceFromCart()
 	{
-		String price = getText(wbCartPerProductPriceLbls.get(poductIndex-1));
+		String price = getText(wbCartPerProductPriceLbls.get(wbCartPerProductPriceLbls.size()-1));
 		_log.info("Cart Page Price: {}",price);
 		return parseToDouble(price);
 	}

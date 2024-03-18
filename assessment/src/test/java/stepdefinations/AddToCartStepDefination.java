@@ -104,7 +104,7 @@ public class AddToCartStepDefination{
 		 _cartPage = new CartPage(_frameworkContext);
 		 _cartPage.navigateToCartPage();
 		 
-		 double cartPagePrice = _cartPage.getPriceFromCart(resultIndex);
+		 double cartPagePrice = _cartPage.getPriceFromCart();
 		 _cartPagePrices.put(productName, cartPagePrice);
 		 cartPageSubtotal = _cartPage.getSubTotalPriceFromCart();
 		 Assert.assertEquals(productPagePrice, cartPagePrice);

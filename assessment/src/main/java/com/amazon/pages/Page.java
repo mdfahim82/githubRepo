@@ -7,6 +7,7 @@ import java.util.Set;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -86,6 +87,12 @@ public abstract class Page {
 	protected void jsClick(WebElement element)
 	{
 		((JavascriptExecutor) _browser).executeScript("arguments[0].click();", element);
+	}
+	
+	protected void mouseClick(WebElement element)
+	{
+		Actions mouseAction = new Actions(_browser);
+		mouseAction.moveToElement(element).click();
 	}
 	
 }

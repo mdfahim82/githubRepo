@@ -46,8 +46,8 @@ public class MyTest {
 	@Test
 	public void justTest() {
 
-		String searchProduct = "Monitor";
-		resultIndex = 1;
+		String searchProduct = "Laptop";
+		resultIndex = 2;
 
 		try {
 
@@ -67,7 +67,7 @@ public class MyTest {
 
 			_cartPage = new CartPage(_frameworkContext);
 			_cartPage.navigateToCartPage();
-			cartPagePrice = _cartPage.getPriceFromCart(resultIndex);
+			cartPagePrice = _cartPage.getPriceFromCart();
 			cartPageSubtotal = _cartPage.getSubTotalPriceFromCart();
 
 			Assert.assertEquals(productPagePrice, cartPagePrice);
