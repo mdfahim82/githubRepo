@@ -1,0 +1,91 @@
+[INFO ] [2024-03-18 11:16:13.583] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:16:13.706] [stepdefinations.AddToCartStepDefination:Line 60] Driver is intialized
+[INFO ] [2024-03-18 11:16:19.802] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 11:16:20.064] [stepdefinations.AddToCartStepDefination:Line 67] Browser is closed
+[INFO ] [2024-03-18 11:16:21.030] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:16:21.169] [stepdefinations.AddToCartStepDefination:Line 60] Driver is intialized
+[INFO ] [2024-03-18 11:16:22.376] [stepdefinations.AddToCartStepDefination:Line 75] Navigated to Landing Page
+[INFO ] [2024-03-18 11:16:22.390] [stepdefinations.AddToCartStepDefination:Line 80] Product Name: Laptop
+[INFO ] [2024-03-18 11:16:22.390] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 11:16:24.465] [stepdefinations.AddToCartStepDefination:Line 88] Product Selection Index: 2
+[INFO ] [2024-03-18 11:16:27.822] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 11:16:33.172] [stepdefinations.AddToCartStepDefination:Line 67] Browser is closed
+[INFO ] [2024-03-18 11:16:34.175] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:16:34.297] [stepdefinations.AddToCartStepDefination:Line 60] Driver is intialized
+[INFO ] [2024-03-18 11:16:39.806] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 11:16:40.005] [stepdefinations.AddToCartStepDefination:Line 67] Browser is closed
+[INFO ] [2024-03-18 11:17:33.797] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:17:33.919] [sample.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 11:17:40.935] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 11:17:40.936] [sample.MyTest:Line 53] Navigated to Landing Page
+[INFO ] [2024-03-18 11:17:40.936] [com.amazon.pages.LandingPage:Line 63] Search for Product: KeyBoard
+[INFO ] [2024-03-18 11:17:47.491] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:17:47.623] [stepdefinations.AddToCartStepDefination:Line 60] Driver is intialized
+[INFO ] [2024-03-18 11:17:54.077] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 11:17:54.262] [stepdefinations.AddToCartStepDefination:Line 67] Browser is closed
+[INFO ] [2024-03-18 11:17:55.197] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:17:55.320] [stepdefinations.AddToCartStepDefination:Line 60] Driver is intialized
+[INFO ] [2024-03-18 11:18:01.458] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 11:18:01.618] [stepdefinations.AddToCartStepDefination:Line 67] Browser is closed
+[INFO ] [2024-03-18 11:18:02.650] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:18:02.767] [stepdefinations.AddToCartStepDefination:Line 60] Driver is intialized
+[INFO ] [2024-03-18 11:18:08.871] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 11:18:09.038] [stepdefinations.AddToCartStepDefination:Line 67] Browser is closed
+[INFO ] [2024-03-18 11:19:08.257] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:19:08.384] [stepdefinations.AddToCartStepDefination:Line 60] Driver is intialized
+[INFO ] [2024-03-18 11:19:14.492] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 11:19:14.726] [stepdefinations.AddToCartStepDefination:Line 67] Browser is closed
+[INFO ] [2024-03-18 11:19:15.651] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:19:15.770] [stepdefinations.AddToCartStepDefination:Line 60] Driver is intialized
+[INFO ] [2024-03-18 11:19:21.830] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 11:19:22.055] [stepdefinations.AddToCartStepDefination:Line 67] Browser is closed
+[INFO ] [2024-03-18 11:19:23.050] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:19:23.171] [stepdefinations.AddToCartStepDefination:Line 60] Driver is intialized
+[INFO ] [2024-03-18 11:19:29.303] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 11:19:29.501] [stepdefinations.AddToCartStepDefination:Line 67] Browser is closed
+[INFO ] [2024-03-18 11:23:24.069] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:23:24.186] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 11:23:25.842] [com.sample.test.MyTest:Line 54] Navigated to Landing Page
+[INFO ] [2024-03-18 11:23:25.842] [com.amazon.pages.LandingPage:Line 63] Search for Product: KeyBoard
+[INFO ] [2024-03-18 11:23:28.016] [com.sample.test.MyTest:Line 57] Total results count: 11
+[INFO ] [2024-03-18 11:23:28.016] [com.sample.test.MyTest:Line 59] Result Index: 1
+[INFO ] [2024-03-18 11:23:32.637] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 2,995
+[INFO ] [2024-03-18 11:23:36.327] [com.amazon.pages.CartPage:Line 50] Navigated to Cart Page
+[INFO ] [2024-03-18 11:23:36.355] [com.amazon.pages.CartPage:Line 56] Cart Page Price:   2,995.00
+[INFO ] [2024-03-18 11:23:36.386] [com.amazon.pages.CartPage:Line 78] Cart Page subTotalPrice:   2,995.00
+[INFO ] [2024-03-18 11:23:36.584] [com.sample.test.MyTest:Line 78] Driver is closed
+[INFO ] [2024-03-18 11:23:54.962] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:23:55.083] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 11:24:01.678] [com.amazon.pages.LandingPage:Line 53] Capcha cannot be automated. Please stop and retry execution
+[INFO ] [2024-03-18 11:24:01.679] [com.sample.test.MyTest:Line 54] Navigated to Landing Page
+[INFO ] [2024-03-18 11:24:01.679] [com.amazon.pages.LandingPage:Line 63] Search for Product: Monitor
+[INFO ] [2024-03-18 11:27:56.516] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:27:56.648] [com.sample.test.MyTest:Line 43] Driver is intialized
+[INFO ] [2024-03-18 11:27:58.101] [com.sample.test.MyTest:Line 56] Navigated to Landing Page
+[INFO ] [2024-03-18 11:27:58.102] [com.amazon.pages.LandingPage:Line 63] Search for Product: Monitor
+[INFO ] [2024-03-18 11:28:00.264] [com.sample.test.MyTest:Line 59] Total results count: 10
+[INFO ] [2024-03-18 11:28:00.265] [com.sample.test.MyTest:Line 61] Result Index: 1
+[INFO ] [2024-03-18 11:28:04.122] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 10,999
+[INFO ] [2024-03-18 11:28:07.447] [com.amazon.pages.CartPage:Line 50] Navigated to Cart Page
+[INFO ] [2024-03-18 11:28:07.479] [com.amazon.pages.CartPage:Line 56] Cart Page Price:   10,999.00
+[INFO ] [2024-03-18 11:28:07.513] [com.amazon.pages.CartPage:Line 78] Cart Page subTotalPrice:   10,999.00
+[INFO ] [2024-03-18 11:28:07.655] [com.sample.test.MyTest:Line 79] Driver is closed
+[INFO ] [2024-03-18 11:30:31.181] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:30:31.312] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 11:30:32.616] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 11:30:32.618] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Monitor
+[INFO ] [2024-03-18 11:30:32.619] [com.amazon.pages.LandingPage:Line 63] Search for Product: Monitor
+[INFO ] [2024-03-18 11:30:35.012] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 1
+[INFO ] [2024-03-18 11:30:39.109] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 10,999
+[INFO ] [2024-03-18 11:30:43.004] [com.amazon.pages.CartPage:Line 50] Navigated to Cart Page
+[INFO ] [2024-03-18 11:30:43.033] [com.amazon.pages.CartPage:Line 56] Cart Page Price:   10,999.00
+[INFO ] [2024-03-18 11:30:43.064] [com.amazon.pages.CartPage:Line 78] Cart Page subTotalPrice:   10,999.00
+[INFO ] [2024-03-18 11:30:43.267] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 11:31:17.897] [com.amazon.utils.WebDriverManager:Line 35] chrome_browser is initiated 
+[INFO ] [2024-03-18 11:31:18.016] [stepdefinations.AddToCartStepDefination:Line 59] Driver is intialized
+[INFO ] [2024-03-18 11:31:19.226] [stepdefinations.AddToCartStepDefination:Line 74] Navigated to Landing Page
+[INFO ] [2024-03-18 11:31:19.229] [stepdefinations.AddToCartStepDefination:Line 79] Product Name: Laptop
+[INFO ] [2024-03-18 11:31:19.230] [com.amazon.pages.LandingPage:Line 63] Search for Product: Laptop
+[INFO ] [2024-03-18 11:31:21.307] [stepdefinations.AddToCartStepDefination:Line 87] Product Selection Index: 2
+[INFO ] [2024-03-18 11:31:25.128] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 1,15,900
+[INFO ] [2024-03-18 11:31:30.559] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed

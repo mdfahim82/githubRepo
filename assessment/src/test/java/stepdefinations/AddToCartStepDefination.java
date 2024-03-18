@@ -28,10 +28,10 @@ import io.cucumber.java.en.*;
 
 public class AddToCartStepDefination{
 
-	protected WebDriver browser;
-	protected ProjectProperty properties = ProjectProperty.getInstance();	
+	protected WebDriver _browser;
+	protected ProjectProperty _properties = ProjectProperty.getInstance();	
 	protected FrameworkContext _frameworkContext = new FrameworkContext();
-	private static Logger log = LogManager.getLogger(AddToCartStepDefination.class);
+	private static Logger _log = LogManager.getLogger(AddToCartStepDefination.class);
 	
 	private LandingPage _landingPage = null;
 	private ProductPage _productPage = null;
@@ -41,30 +41,29 @@ public class AddToCartStepDefination{
 	
 	private int resultIndex;
 	private double productPagePrice;
-//	private double cartPagePrice;
 	private double cartPageSubtotal;
 	private double productPageSubtotal;
 	
-	private HashMap<String,Double> productPagePrices = new LinkedHashMap<String,Double>();
-	private HashMap<String,Double> cartPagePrices = new LinkedHashMap<String,Double>();
+	private HashMap<String,Double> _productPagePrices = new LinkedHashMap<String,Double>();
+	private HashMap<String,Double> _cartPagePrices = new LinkedHashMap<String,Double>();
 	
 	
 	@Before
 	public void initDriver()
 	{
 		WebDriverManager driverManager = new WebDriverManager();
-		this.browser = driverManager.initDriver(properties.getBrowserChoice());		
-		_frameworkContext.setBrowser(browser);
-		_frameworkContext.setApplication_URL(properties.getApplicationURL());
-		_frameworkContext.setDefaultWaitTime(properties.getDefaultWaitTime());
-		log.info("Driver is intialized");
+		this._browser = driverManager.initDriver(_properties.getBrowserChoice());		
+		_frameworkContext.setBrowser(_browser);
+		_frameworkContext.setApplication_URL(_properties.getApplicationURL());
+		_frameworkContext.setDefaultWaitTime(_properties.getDefaultWaitTime());
+		_log.info("Driver is intialized");
 	}
 
 	@After
 	public void closeDriver()
 	{
 		_frameworkContext.getBrowser().quit();
-		log.info("Browser is closed");
+		_log.info("Browser is closed");
 	}
 	
 	@Given("user is on Amazon Landing Page")
@@ -72,12 +71,12 @@ public class AddToCartStepDefination{
 		_landingPage = new LandingPage(_frameworkContext);
 		boolean status = _landingPage.NavigateToLandingPage();
 		assertTrue(status,"CAPTCHA cannot be automated. Please stop and retry execution");
-		log.info("Navigated to Landing Page");
+		_log.info("Navigated to Landing Page");
 	}
 	
 	@When("user search {string} in search filed")
 	public void user_search_in_search_filed(String productName) {
-		log.info("Product Name: " + productName);
+		_log.info("Product Name: " + productName);
 		
 		_resultsElements = _landingPage.searchProductGetResults(productName);
 	}
@@ -85,7 +84,7 @@ public class AddToCartStepDefination{
 	@Then("user select {int} product")
 	public void user_select_product(Integer resultIndex) {
 		this.resultIndex = resultIndex;
-		log.info("Product Selection Index: "+resultIndex);
+		_log.info("Product Selection Index: "+resultIndex);
 		
 		_landingPage.selectProduct(_resultsElements.get(resultIndex-1));
 	}
@@ -95,7 +94,7 @@ public class AddToCartStepDefination{
 		_productPage = new ProductPage(_frameworkContext);
 		
 		productPagePrice = _productPage.getDiscountedPrice();
-		productPagePrices.put(productName, productPagePrice);
+		_productPagePrices.put(productName, productPagePrice);
 		_productPage.addToCart();
 		
 	}
@@ -106,7 +105,7 @@ public class AddToCartStepDefination{
 		 _cartPage.navigateToCartPage();
 		 
 		 double cartPagePrice = _cartPage.getPriceFromCart(resultIndex);
-		 cartPagePrices.put(productName, cartPagePrice);
+		 _cartPagePrices.put(productName, cartPagePrice);
 		 cartPageSubtotal = _cartPage.getSubTotalPriceFromCart();
 		 Assert.assertEquals(productPagePrice, cartPagePrice);
 		
@@ -114,7 +113,7 @@ public class AddToCartStepDefination{
 
 	@And("compare sub total with product page")
 	public void compare_sub_total_with_product_page() {
-		for(double value : productPagePrices.values())
+		for(double value : _productPagePrices.values())
 			productPageSubtotal += value;
 		Assert.assertEquals(productPageSubtotal, cartPageSubtotal);
 	}
@@ -122,10 +121,10 @@ public class AddToCartStepDefination{
 	
 	@Then("compare price all items in product page with cart page")
 	public void compare_price_all_items_in_product_page_with_cart_page() {
-		for(String item : productPagePrices.keySet())
+		for(String item : _productPagePrices.keySet())
 		{
-			log.info("Comparing Price of: {}",item);
-			Assert.assertEquals(productPagePrices.get(item), cartPagePrices.get(item));
+			_log.info("Comparing Price of: {}",item);
+			Assert.assertEquals(_productPagePrices.get(item), _cartPagePrices.get(item));
 		}
 			
 	}
