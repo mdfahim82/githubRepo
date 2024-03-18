@@ -39,7 +39,6 @@ public class AddToCartStepDefination{
 	
 	private List<WebElement> _resultsElements =null;
 	
-	private int resultIndex;
 	private double productPagePrice;
 	private double cartPageSubtotal;
 	private double productPageSubtotal;
@@ -63,7 +62,7 @@ public class AddToCartStepDefination{
 	public void closeDriver()
 	{
 		_frameworkContext.getBrowser().quit();
-		_log.info("Browser is closed");
+		_log.info("Test completed... Closing Broser");
 	}
 	
 	@Given("user is on Amazon Landing Page")
@@ -83,7 +82,6 @@ public class AddToCartStepDefination{
 
 	@Then("user select {int} product")
 	public void user_select_product(Integer resultIndex) {
-		this.resultIndex = resultIndex;
 		_log.info("Product Selection Index: "+resultIndex);
 		
 		_landingPage.selectProduct(_resultsElements.get(resultIndex-1));
@@ -107,6 +105,7 @@ public class AddToCartStepDefination{
 		 double cartPagePrice = _cartPage.getPriceFromCart();
 		 _cartPagePrices.put(productName, cartPagePrice);
 		 cartPageSubtotal = _cartPage.getSubTotalPriceFromCart();
+		 _log.info("Price of {} in ProductPage {} and in CartPage {}",productName,productPagePrice, cartPagePrice);
 		 Assert.assertEquals(productPagePrice, cartPagePrice);
 		
 	}
@@ -115,6 +114,7 @@ public class AddToCartStepDefination{
 	public void compare_sub_total_with_product_page() {
 		for(double value : _productPagePrices.values())
 			productPageSubtotal += value;
+		_log.info("SubTotal of ProductPage {} and CartPage {}",productPageSubtotal, cartPageSubtotal);
 		Assert.assertEquals(productPageSubtotal, cartPageSubtotal);
 	}
 	
@@ -123,7 +123,7 @@ public class AddToCartStepDefination{
 	public void compare_price_all_items_in_product_page_with_cart_page() {
 		for(String item : _productPagePrices.keySet())
 		{
-			_log.info("Comparing Price of: {}",item);
+			_log.info("Price of: {} in ProductPage {} and in CartPage {}",item,_productPagePrices.get(item),_cartPagePrices.get(item));
 			Assert.assertEquals(_productPagePrices.get(item), _cartPagePrices.get(item));
 		}
 			

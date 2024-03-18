@@ -43,9 +43,15 @@ public abstract class Page {
 		return _wait.until(ExpectedConditions.visibilityOfAllElements(elements));
 	}
 	
+	
 	protected void enterText(WebElement element, String text)
 	{
 		waitForElementClickable(element);
+		
+		String exitingText = element.getText();
+		if(!exitingText.isEmpty() || exitingText!=null)
+			element.clear();
+		
 		element.click();
 		element.sendKeys(text);
 	}

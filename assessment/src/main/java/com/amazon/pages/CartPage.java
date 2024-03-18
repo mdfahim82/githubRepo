@@ -51,7 +51,7 @@ public class CartPage extends CommonPage{
 	
 	public double getPriceFromCart()
 	{
-		String price = getText(wbCartPerProductPriceLbls.get(wbCartPerProductPriceLbls.size()-1));
+		String price = getText(wbCartPerProductPriceLbls.get(0));
 		_log.info("Cart Page Price: {}",price);
 		return parseToDouble(price);
 	}

@@ -64,7 +64,9 @@ public class LandingPage extends CommonPage{
 		enterText(wbSearchTxtBx, productName);
 		click(wbSearchBtn);
 		
-		return waitForAllEmentsVisible(wbSearchResultImg);
+		waitForElementClickable(wbSearchResultImg.get(0));
+		
+		return wbSearchResultImg;
 	}
 	
 	public void selectProduct(WebElement product)

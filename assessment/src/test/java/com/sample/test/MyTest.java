@@ -47,7 +47,7 @@ public class MyTest {
 	public void justTest() {
 
 		String searchProduct = "Laptop";
-		resultIndex = 2;
+		int cartIndex = 0;
 
 		try {
 

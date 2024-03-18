@@ -1,17 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-18T12:54:47 IST" name="Default suite" finished-at="2024-03-18T12:55:35 IST" duration-ms="47350">
+  <suite started-at="2024-03-18T15:16:46 IST" name="Default suite" finished-at="2024-03-18T15:17:50 IST" duration-ms="64264">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-03-18T12:54:47 IST" name="Default test" finished-at="2024-03-18T12:55:35 IST" duration-ms="47350">
-      <class name="com.sample.test.MyTest2">
-        <test-method signature="justTest()[pri:0, instance:com.sample.test.MyTest2@35835e65]" started-at="2024-03-18T12:54:47 IST" name="justTest" finished-at="2024-03-18T12:55:35 IST" duration-ms="47322" status="PASS">
+    <test started-at="2024-03-18T15:16:46 IST" name="Default test" finished-at="2024-03-18T15:17:50 IST" duration-ms="64264">
+      <class name="stepdefinations.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" started-at="2024-03-18T15:16:46 IST" name="setUpClass" finished-at="2024-03-18T15:16:46 IST" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@37b01ce2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- justTest -->
-      </class> <!-- com.sample.test.MyTest2 -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" started-at="2024-03-18T15:16:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-18T15:17:09 IST" duration-ms="22513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding an item in cart and verifying subtotal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add to Cart feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" started-at="2024-03-18T15:17:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-18T15:17:38 IST" duration-ms="29016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding an item in cart and verifying subtotal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add Laptop to Cart feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" started-at="2024-03-18T15:17:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-18T15:17:50 IST" duration-ms="12324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding an item in cart and verifying subtotal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add Monitor to Cart feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:stepdefinations.TestRunner@2d901eb0]" started-at="2024-03-18T15:17:50 IST" name="tearDownClass" finished-at="2024-03-18T15:17:50 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- stepdefinations.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

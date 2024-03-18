@@ -1,5 +1,7 @@
 package com.sample.test;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -31,8 +33,12 @@ public class MyTest2 {
 
 	private int resultIndex;
 	private double productPagePrice;
-	private double cartPagePrice;
 	private double cartPageSubtotal;
+	private double productPageSubtotal;
+	
+	private HashMap<String,Double> _productPagePrices = new LinkedHashMap<String,Double>();
+	private HashMap<String,Double> _cartPagePrices = new LinkedHashMap<String,Double>();
+	
 
 	public MyTest2() {
 		WebDriverManager driverManager = new WebDriverManager();
@@ -46,9 +52,9 @@ public class MyTest2 {
 	@Test
 	public void justTest() {
 
-		String searchProduct1 = "Headphones";
-		String searchProduct2 = "Keaboard";
-		resultIndex = 2;
+		String searchProduct2 = "Headphones";
+		String searchProduct1 = "Keyboard";
+		resultIndex = 1;
 
 		try {
 
@@ -62,29 +68,46 @@ public class MyTest2 {
 			_landingPage.selectProduct(_resultsElements.get(resultIndex - 1));
 			_productPage = new ProductPage(_frameworkContext);
 			productPagePrice = _productPage.getDiscountedPrice();
+			_productPagePrices.put(searchProduct1, productPagePrice);
 			_productPage.addToCart();
 			_cartPage = new CartPage(_frameworkContext);
 			_cartPage.navigateToCartPage();
-			cartPagePrice = _cartPage.getPriceFromCart();
-			
+			double cartPagePrice = _cartPage.getPriceFromCart();
+			_cartPagePrices.put(searchProduct1, cartPagePrice);
+
 			_resultsElements = _landingPage.searchProductGetResults(searchProduct2);
 			_log.info("Total results count: {}", _resultsElements.size());
 			_log.info("Result Index: " + resultIndex);
 			_landingPage.selectProduct(_resultsElements.get(resultIndex - 1));
 			_productPage = new ProductPage(_frameworkContext);
 			productPagePrice = _productPage.getDiscountedPrice();
+			_productPagePrices.put(searchProduct2, productPagePrice);
 			_productPage.addToCart();
 			_cartPage = new CartPage(_frameworkContext);
 			_cartPage.navigateToCartPage();
-			cartPagePrice = _cartPage.getPriceFromCart();
 			
-			
+			 cartPagePrice = _cartPage.getPriceFromCart();
+			 _cartPagePrices.put(searchProduct2, cartPagePrice);
+			 cartPageSubtotal = _cartPage.getSubTotalPriceFromCart();
 			
 			
 			cartPageSubtotal = _cartPage.getSubTotalPriceFromCart();
 
-			Assert.assertEquals(productPagePrice, cartPagePrice);
-			Assert.assertEquals(productPagePrice, cartPageSubtotal);
+			for(double value : _productPagePrices.values())
+				productPageSubtotal += value;
+			Assert.assertEquals(productPageSubtotal, cartPageSubtotal);
+			
+			
+			for(String item : _productPagePrices.keySet())
+			{
+				_log.info("Comparing Price of: {} in Product {} and in Cart {} Page",item, _productPagePrices.get(item),_cartPagePrices.get(item));
+				Assert.assertEquals(_productPagePrices.get(item), _cartPagePrices.get(item));
+			}
+			
+			
+			
+			
+			
 		} catch (Exception e) {
 			_log.info("Exception occured: {}", e.getMessage());
 		} finally {
