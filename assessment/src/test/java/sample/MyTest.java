@@ -45,12 +45,14 @@ public class MyTest {
 
 	@Test
 	public void justTest() {
-
+		
+		String searchProduct = "KeyBoard";
+		
 		_landingPage = new LandingPage(frameworkContext);
 		_landingPage.NavigateToLandingPage();
 		log.info("Navigated to Landing Page");
 		
-		_resultsElements = _landingPage.searchProductGetResults("KeyBoard");
+		_resultsElements = _landingPage.searchProductGetResults(searchProduct);
 		log.info("Total results count: {}",_resultsElements.size());
 		
 		

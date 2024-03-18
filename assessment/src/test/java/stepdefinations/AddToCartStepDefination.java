@@ -1,5 +1,7 @@
 package stepdefinations;
 
+import static org.testng.Assert.assertTrue;
+
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -24,12 +26,12 @@ import io.cucumber.java.en.*;
 
 
 
-public class AddToCartTest{
+public class AddToCartStepDefination{
 
 	protected WebDriver browser;
 	protected ProjectProperty properties = ProjectProperty.getInstance();	
 	protected FrameworkContext _frameworkContext = new FrameworkContext();
-	private static Logger log = LogManager.getLogger(AddToCartTest.class);
+	private static Logger log = LogManager.getLogger(AddToCartStepDefination.class);
 	
 	private LandingPage _landingPage = null;
 	private ProductPage _productPage = null;
@@ -68,7 +70,8 @@ public class AddToCartTest{
 	@Given("user is on Amazon Landing Page")
 	public void user_is_on_amazon_landing_page() {
 		_landingPage = new LandingPage(_frameworkContext);
-		_landingPage.NavigateToLandingPage();
+		boolean status = _landingPage.NavigateToLandingPage();
+		assertTrue(status,"CAPTCHA cannot be automated. Please stop and retry execution");
 		log.info("Navigated to Landing Page");
 	}
 	

@@ -33,14 +33,14 @@ public class ProductPage extends CommonPage{
 		super(context);
 	}
 	
-	private static Logger log = LogManager.getLogger(ProductPage.class);
+	private static Logger _log = LogManager.getLogger(ProductPage.class);
 	
 	
 	public double getDiscountedPrice()
 	{
 		switchWindow();
 		String discountedPrice = getText(wbDiscountedPriceLbls.get(0));
-		log.info("ProductPage Discounted Price: {}",discountedPrice);
+		_log.info("ProductPage Discounted Price: {}",discountedPrice);
 		return parseToDouble(discountedPrice);
 	}
 	
@@ -55,7 +55,7 @@ public class ProductPage extends CommonPage{
 		}
 		catch(NoSuchElementException e)
 		{
-			log.info("No Addon Displayed");
+			_log.info("No Addon Displayed");
 		}
 	}
 	

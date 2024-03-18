@@ -32,7 +32,7 @@ public class CartPage extends CommonPage{
 		super(context);
 	}
 	
-	private static Logger log = LogManager.getLogger(CartPage.class);
+	private static Logger _log = LogManager.getLogger(CartPage.class);
 	
 	
 	public void navigateToCartPage()
@@ -47,13 +47,13 @@ public class CartPage extends CommonPage{
 		{
 			wbGoToCartBtn.get(0).click();
 		}
-		log.info("Navigated to Cart Page");
+		_log.info("Navigated to Cart Page");
 	}
 	
 	public double getPriceFromCart(int poductIndex)
 	{
 		String price = getText(wbCartPerProductPriceLbls.get(poductIndex-1));
-		log.info("Cart Page Price: {}",price);
+		_log.info("Cart Page Price: {}",price);
 		return parseToDouble(price);
 	}
 	
@@ -65,7 +65,7 @@ public class CartPage extends CommonPage{
 		for(WebElement element : wbCartPerProductPriceLbls)
 		{
 			String price = getText(element);
-			log.info("Cart Page Price: {}",price);
+			_log.info("Cart Page Price: {}",price);
 			productPrices.add(parseToDouble(price));
 		}
 		return productPrices;
@@ -75,7 +75,7 @@ public class CartPage extends CommonPage{
 	public double getSubTotalPriceFromCart()
 	{
 		String subTotalPrice = getText(wbCartSubTotalLbl);
-		log.info("Cart Page subTotalPrice: {}",subTotalPrice);
+		_log.info("Cart Page subTotalPrice: {}",subTotalPrice);
 		return parseToDouble(subTotalPrice);
 	}
 	

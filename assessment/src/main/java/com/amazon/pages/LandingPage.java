@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -12,8 +13,8 @@ import com.amazon.utils.FrameworkContext;
 
 public class LandingPage extends CommonPage{
 	
-	private WebDriver browser;
-	private String application_URL;
+	private WebDriver _browser;
+	private String _application_URL;
 	
 
 	@FindBy(id="twotabsearchtextbox")
@@ -25,28 +26,41 @@ public class LandingPage extends CommonPage{
 	@FindBy(xpath="//a[contains(@href,'/sspa/click?')]//img")
 	private List<WebElement> wbSearchResultImg;
 	
-	
+	@FindBy(xpath="//button[text()='Continue shopping']")
+	private WebElement wbContinueShoppingBtn;
 	
 
 	public LandingPage(FrameworkContext context) {
 		super(context);
-		this.browser = context.getBrowser();
-		this.application_URL = context.getApplication_URL();
+		this._browser = context.getBrowser();
+		this._application_URL = context.getApplication_URL();
 		
 	}
 	
-	private Logger log = LogManager.getLogger(LandingPage.class);
+	private Logger _log = LogManager.getLogger(LandingPage.class);
 	
 
-	public void NavigateToLandingPage()
+	public boolean NavigateToLandingPage()
 	{
-		browser.navigate().to(application_URL);
-		waitForElementVisibility(wbSearchTxtBx);	
+		_browser.navigate().to(_application_URL);
+		
+		try {
+			waitForElementVisibility(wbSearchTxtBx);
+		}catch(WebDriverException we)
+		{
+			if(wbContinueShoppingBtn.isDisplayed())
+			{
+				_log.info("Capcha cannot be automated. Please stop and retry execution");
+				return false;
+			}
+		}
+		return true;
+			
 	}
 	
 	public List<WebElement> searchProductGetResults(String productName)
 	{
-		log.info("Search for Product: {}",productName);
+		_log.info("Search for Product: {}",productName);
 		enterText(wbSearchTxtBx, productName);
 		click(wbSearchBtn);
 		

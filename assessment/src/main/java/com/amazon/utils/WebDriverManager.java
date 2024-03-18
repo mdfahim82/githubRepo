@@ -10,42 +10,32 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverManager {
 
-	WebDriver baseDriver = null;
-	ProjectProperty prop = ProjectProperty.getInstance();
-	protected String testName = null;
-	static int count=0;
-
-	public WebDriverManager() {
-
-	}
-
-	private Logger log = LogManager.getLogger(WebDriverManager.class);
+	private WebDriver _baseDriver = null;
+	private Logger _log = LogManager.getLogger(WebDriverManager.class);
 
 	public WebDriver initDriver(String platform) {
-		count++;
 		switch (platform) {
 		case Constants.FIREFOX_BROWSER:
-			baseDriver = new FirefoxDriver();
+			_baseDriver = new FirefoxDriver();
 			break;
 		case Constants.CHROME_BROWSER:
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--incognito"); 
-			baseDriver = new ChromeDriver(options);
+			options.addArguments("--incognito");
+			_baseDriver = new ChromeDriver(options);
 			break;
 		case Constants.EDGE_BROWSER:
-			baseDriver = new EdgeDriver();
+			_baseDriver = new EdgeDriver();
 			break;
 
 		default:
-			baseDriver = null;
+			_baseDriver = null;
 		}
-		
-		log.info("{} is initiated with count {}",platform, count);
-		if (baseDriver != null)
-		{
-			baseDriver.manage().window().maximize();
+
+		if (_baseDriver != null) {
+			_log.info("{} is initiated ", platform);
+			_baseDriver.manage().window().maximize();
 		}
-			
-		return baseDriver;
+
+		return _baseDriver;
 	}
 }

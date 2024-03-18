@@ -2,10 +2,6 @@ package com.amazon.utils;
 
 public class Constants {
 
-	public Constants() {
-	}
-	
-	
 	// Drivers constants
 	public static final String BROWSER = "browser";
 	public static final String CHROME_BROWSER = "chrome_browser";
@@ -19,8 +15,5 @@ public class Constants {
 	// Project Property Constants
 	public static final String APPLICATION_URL = "application_url";
 	public static final String TEST_DATA_WORKBOOK = "test_data_workbook";
-
-	
-	
 	
 }

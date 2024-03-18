@@ -15,31 +15,31 @@ import com.amazon.utils.FrameworkContext;
 
 public abstract class Page {
 
-	private WebDriver browser;
+	private WebDriver _browser;
 	private int defaultWaitTime ;
-	private WebDriverWait wait;
+	private WebDriverWait _wait;
 
 	public Page(FrameworkContext context) {
-		this.browser = context.getBrowser();
-		PageFactory.initElements(browser, this);
+		this._browser = context.getBrowser();
+		PageFactory.initElements(_browser, this);
 		this.defaultWaitTime = context.getDefaultWaitTime();
-		wait = new WebDriverWait(browser,  Duration.ofSeconds(defaultWaitTime));
+		_wait = new WebDriverWait(_browser,  Duration.ofSeconds(defaultWaitTime));
 	}
 
 	
 	protected WebElement waitForElementClickable(WebElement element)
 	{
-		return wait.until(ExpectedConditions.elementToBeClickable(element));
+		return _wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
 	protected WebElement waitForElementVisibility(WebElement element)
 	{
-		return wait.until(ExpectedConditions.visibilityOf(element));
+		return _wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
 	protected List<WebElement> waitForAllEmentsVisible(List<WebElement> elements) {
 		
-		return wait.until(ExpectedConditions.visibilityOfAllElements(elements));
+		return _wait.until(ExpectedConditions.visibilityOfAllElements(elements));
 	}
 	
 	protected void enterText(WebElement element, String text)
@@ -64,14 +64,14 @@ public abstract class Page {
 	
 	protected void switchWindow()
 	{
-		String oldWindowHandle = browser.getWindowHandle();
-		Set<String> allWindows = browser.getWindowHandles();
+		String oldWindowHandle = _browser.getWindowHandle();
+		Set<String> allWindows = _browser.getWindowHandles();
 		for (String window : allWindows)
 		{
 			if(!window.equals(oldWindowHandle))
 			{
-				browser.close();
-				browser.switchTo().window(window);
+				_browser.close();
+				_browser.switchTo().window(window);
 			}
 		}
 	}
@@ -79,13 +79,13 @@ public abstract class Page {
 	
 	protected void scrollIntoView(WebElement element)
 	{
-		((JavascriptExecutor) browser).executeScript("arguments[0].scrollIntoView(true);", element);
+		((JavascriptExecutor) _browser).executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 	
 	
 	protected void jsClick(WebElement element)
 	{
-		((JavascriptExecutor) browser).executeScript("arguments[0].click();", element);
+		((JavascriptExecutor) _browser).executeScript("arguments[0].click();", element);
 	}
 	
 }

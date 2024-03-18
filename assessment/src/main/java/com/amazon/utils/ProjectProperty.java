@@ -9,31 +9,31 @@ import org.apache.logging.log4j.Logger;
 
 public class ProjectProperty {
 	
-	private static ProjectProperty projectProperty = null;
-	private Properties prop = null;
+	private static ProjectProperty _projectProperty = null;
+	private Properties _prop = null;
 	
-	private static Logger log = LogManager.getLogger(ProjectProperty.class);
+	private static Logger _log = LogManager.getLogger(ProjectProperty.class);
 
 
 	private ProjectProperty() {
-		prop = new Properties();
+		_prop = new Properties();
 		String projectPath = System.getProperty("user.dir");
 		try (FileInputStream fIS = new FileInputStream(projectPath+Constants.PROJECT_PROPERTY_FILE_PATH)) {
-			prop.load(fIS);
+			_prop.load(fIS);
 		} catch (Exception e) {
-			log.error(Arrays.toString(e.getStackTrace()));
+			_log.error(Arrays.toString(e.getStackTrace()));
 		}
 	}
 
 	public static ProjectProperty getInstance() {
-		if (projectProperty == null) {
-			projectProperty = new ProjectProperty();
+		if (_projectProperty == null) {
+			_projectProperty = new ProjectProperty();
 		}
-		return projectProperty;
+		return _projectProperty;
 	}
 
 	public String getProperty(String key) {
-		return prop.getProperty(key);
+		return _prop.getProperty(key);
 	}
 
 	public String getBrowserChoice() {
