@@ -40,13 +40,13 @@ public class LandingPage extends CommonPage{
 
 	public void NavigateToLandingPage()
 	{
-//		browser.get(application_URL);
 		browser.navigate().to(application_URL);
 		waitForElementVisibility(wbSearchTxtBx);	
 	}
 	
 	public List<WebElement> searchProductGetResults(String productName)
 	{
+		log.info("Search for Product: {}",productName);
 		enterText(wbSearchTxtBx, productName);
 		click(wbSearchBtn);
 		

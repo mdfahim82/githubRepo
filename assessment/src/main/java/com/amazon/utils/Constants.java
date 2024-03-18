@@ -14,7 +14,7 @@ public class Constants {
 	public static final String DEFAULT_WAIT_TIME = "default_wait_time";
 
 	// Property files path
-	public static final String PROJECT_PROPERTY_FILE_PATH = "project.properties";
+	public static final String PROJECT_PROPERTY_FILE_PATH = "/src/test/resources/project.properties";
 
 	// Project Property Constants
 	public static final String APPLICATION_URL = "application_url";

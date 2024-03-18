@@ -18,7 +18,7 @@ public class ProjectProperty {
 	private ProjectProperty() {
 		prop = new Properties();
 		String projectPath = System.getProperty("user.dir");
-		try (FileInputStream fIS = new FileInputStream(projectPath+"/src/test/resources/"+Constants.PROJECT_PROPERTY_FILE_PATH)) {
+		try (FileInputStream fIS = new FileInputStream(projectPath+Constants.PROJECT_PROPERTY_FILE_PATH)) {
 			prop.load(fIS);
 		} catch (Exception e) {
 			log.error(Arrays.toString(e.getStackTrace()));

@@ -4,8 +4,6 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,8 +26,6 @@ public abstract class Page {
 		wait = new WebDriverWait(browser,  Duration.ofSeconds(defaultWaitTime));
 	}
 
-	private static Logger log = LogManager.getLogger(Page.class);
-	
 	
 	protected WebElement waitForElementClickable(WebElement element)
 	{
@@ -48,7 +44,7 @@ public abstract class Page {
 	
 	protected void enterText(WebElement element, String text)
 	{
-		waitForElementClickable(element);//.clear();
+		waitForElementClickable(element);
 		element.click();
 		element.sendKeys(text);
 	}
@@ -68,12 +64,13 @@ public abstract class Page {
 	
 	protected void switchWindow()
 	{
-		String currentWindowHandle = browser.getWindowHandle();
+		String oldWindowHandle = browser.getWindowHandle();
 		Set<String> allWindows = browser.getWindowHandles();
 		for (String window : allWindows)
 		{
-			if(!window.equals(currentWindowHandle))
+			if(!window.equals(oldWindowHandle))
 			{
+				browser.close();
 				browser.switchTo().window(window);
 			}
 		}
