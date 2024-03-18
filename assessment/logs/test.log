@@ -389,3 +389,50 @@ Session ID: 353d18ae21508589053d64eef0b10652
 [INFO ] [2024-03-18 12:47:43.349] [com.amazon.pages.CartPage:Line 55] Cart Page Price:   10,999.00
 [INFO ] [2024-03-18 12:47:43.380] [com.amazon.pages.CartPage:Line 77] Cart Page subTotalPrice:   10,999.00
 [INFO ] [2024-03-18 12:47:43.524] [stepdefinations.AddToCartStepDefination:Line 66] Browser is closed
+[INFO ] [2024-03-18 12:53:09.132] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:53:09.252] [com.sample.test.MyTest2:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:53:10.748] [com.sample.test.MyTest2:Line 57] Navigated to Landing Page
+[INFO ] [2024-03-18 12:53:10.751] [com.amazon.pages.LandingPage:Line 63] Search for Product: Headphones
+[INFO ] [2024-03-18 12:53:13.241] [com.sample.test.MyTest2:Line 60] Total results count: 6
+[INFO ] [2024-03-18 12:53:13.242] [com.sample.test.MyTest2:Line 61] Result Index: 2
+[INFO ] [2024-03-18 12:53:17.415] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 5,990
+[INFO ] [2024-03-18 12:53:28.674] [com.amazon.pages.ProductPage:Line 58] No Addon Displayed
+[INFO ] [2024-03-18 12:53:49.671] [com.amazon.pages.CartPage:Line 49] Navigated to Cart Page
+[INFO ] [2024-03-18 12:53:49.720] [com.amazon.pages.CartPage:Line 55] Cart Page Price:   5,990.00
+[INFO ] [2024-03-18 12:53:49.721] [com.amazon.pages.LandingPage:Line 63] Search for Product: Keaboard
+[INFO ] [2024-03-18 12:53:57.151] [com.sample.test.MyTest2:Line 89] Exception occured: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (ec9a85eee2011c7283e349a56bd0ffee)] -> xpath: //a[contains(@href,'/sspa/click?')]//img]] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65113}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65113/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ec9a85eee2011c7283e349a56bd0ffee
+[INFO ] [2024-03-18 12:53:57.361] [com.sample.test.MyTest2:Line 92] Driver is closed
+[INFO ] [2024-03-18 12:54:47.803] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:54:47.929] [com.sample.test.MyTest2:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:54:49.354] [com.sample.test.MyTest2:Line 57] Navigated to Landing Page
+[INFO ] [2024-03-18 12:54:49.355] [com.amazon.pages.LandingPage:Line 63] Search for Product: Headphones
+[INFO ] [2024-03-18 12:54:51.439] [com.sample.test.MyTest2:Line 60] Total results count: 6
+[INFO ] [2024-03-18 12:54:51.439] [com.sample.test.MyTest2:Line 61] Result Index: 2
+[INFO ] [2024-03-18 12:54:55.568] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 5,990
+[INFO ] [2024-03-18 12:55:07.200] [com.amazon.pages.ProductPage:Line 58] No Addon Displayed
+[INFO ] [2024-03-18 12:55:28.120] [com.amazon.pages.CartPage:Line 49] Navigated to Cart Page
+[INFO ] [2024-03-18 12:55:28.163] [com.amazon.pages.CartPage:Line 55] Cart Page Price:   5,990.00
+[INFO ] [2024-03-18 12:55:28.163] [com.amazon.pages.LandingPage:Line 63] Search for Product: Keaboard
+[INFO ] [2024-03-18 12:55:35.116] [com.sample.test.MyTest2:Line 89] Exception occured: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img], [[ChromeDriver: chrome on windows (2a6afb205841b1b0a1dded4d275c2dc4)] -> xpath: //a[contains(@href,'/sspa/click?')]//img]] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65223/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a6afb205841b1b0a1dded4d275c2dc4
+[INFO ] [2024-03-18 12:55:35.311] [com.sample.test.MyTest2:Line 92] Driver is closed
+[INFO ] [2024-03-18 12:56:06.531] [com.amazon.utils.WebDriverManager:Line 37] chrome_browser is initiated 
+[INFO ] [2024-03-18 12:56:06.662] [com.sample.test.MyTest2:Line 43] Driver is intialized
+[INFO ] [2024-03-18 12:56:08.102] [com.sample.test.MyTest2:Line 57] Navigated to Landing Page
+[INFO ] [2024-03-18 12:56:08.103] [com.amazon.pages.LandingPage:Line 63] Search for Product: Headphones
+[INFO ] [2024-03-18 12:56:19.613] [com.sample.test.MyTest2:Line 60] Total results count: 10
+[INFO ] [2024-03-18 12:56:19.613] [com.sample.test.MyTest2:Line 61] Result Index: 2
+[INFO ] [2024-03-18 12:56:23.793] [com.amazon.pages.ProductPage:Line 43] ProductPage Discounted Price: 5,990
+[INFO ] [2024-03-18 12:56:35.230] [com.amazon.pages.ProductPage:Line 58] No Addon Displayed
+[INFO ] [2024-03-18 12:56:56.248] [com.amazon.pages.CartPage:Line 49] Navigated to Cart Page
+[INFO ] [2024-03-18 12:56:56.302] [com.amazon.pages.CartPage:Line 55] Cart Page Price:   5,990.00
+[INFO ] [2024-03-18 12:56:56.303] [com.amazon.pages.LandingPage:Line 63] Search for Product: Keaboard
